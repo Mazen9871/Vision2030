@@ -5,8 +5,9 @@ body{
     background-attachment: fixed;
     color: white;
 }
+
 .navbar {
-    background-color: rgb(162, 187, 222);
+    background-color: rgba(90, 128, 181, 0.863);
     padding:2px;
     position: relative;
 }
@@ -40,9 +41,9 @@ nav{
     font-size: 40px;
 }
 nav img{
-    width: 80px;
+    width: 100px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 30%;
     margin-right: 15px;
     align-items: left;
     margin:0;
@@ -55,17 +56,17 @@ nav img{
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.365);
 }
 
 
-.first, .second,.three, .four {
-    width: 90%;
-    margin: 20px auto;
+.first, .second,.three, .four, .five {
+    width:fit-content;
+    margin: 20px left;
     display: flex;
     gap: 30px;
     align-items: flex-start;
-    background-color: rgba(169, 35, 35, 0.1);
+    background-color: rgba(35, 55, 169, 0.368);
     backdrop-filter: blur(5px);
     padding: 20px;
     border-radius: 10px;
@@ -73,45 +74,52 @@ nav img{
     transition: transform 0.2s ease;
 }
 
-.first:hover, .second:hover,.three:hover, .four:hover {
+.first:hover, .second:hover,.three:hover, .four:hover, .five:hover {
     transform: translateY(-5px);
 }
 
-.first img, .second img,.three img, .four img {
-    width: 300px;
-    height: 300px;
+.first img, .second img,.three img, .four img ,.five img {
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px;
     flex-shrink: 0;
 }
 
-.first .content, .second .content,.three .content, .four .content {
+
+
+.first p, .second p,.three p, .four p, .five p {
+    margin: 0;
+    line-height: 1.6; 
+    font-size: 30px;
     flex: 1;
     padding: 10px;
+    text-align: center;
 }
 
-.first p, .second p,.three p, .four p {
-    margin: 0;
-    line-height: 1.6;
-    font-size: 30px;
-}
-
-.first a, .second a ,.three a, .four a{
+.first a, .second a ,.three a, .four a, .five a {
     text-decoration: none;
     color: inherit;
 }
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 768px) {
-    .first, .second,.three, .four {
+    .first, .second,.three, .four, .five {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
 
-    .first img, .second img,.three img, .four img {
+    .first img, .second img,.three img, .four img, .five img {
         width: 100%;
         height: auto;
     }
 }
-
+img{
+      width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+   
+}
