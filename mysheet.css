@@ -1,0 +1,117 @@
+body{
+    background-image: url(back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.navbar {
+    background-color: rgb(162, 187, 222);
+    padding:2px;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;}
+    nav li {
+    margin: 0;
+}
+nav a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    color: #e12525;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 160ms ease, transform 120ms ease, color 160ms ease;
+}
+nav a:hover{
+    background: rgb(97, 129, 177);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+nav{
+    font-size: 40px;
+}
+nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    align-items: left;
+    margin:0;
+}
+.footer {
+    background-color: rgb(39, 44, 69);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+}
+
+
+.first, .second,.three, .four {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: rgba(169, 35, 35, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.first:hover, .second:hover,.three:hover, .four:hover {
+    transform: translateY(-5px);
+}
+
+.first img, .second img,.three img, .four img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.first .content, .second .content,.three .content, .four .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.first p, .second p,.three p, .four p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 30px;
+}
+
+.first a, .second a ,.three a, .four a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .first, .second,.three, .four {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .first img, .second img,.three img, .four img {
+        width: 100%;
+        height: auto;
+    }
+}
+
