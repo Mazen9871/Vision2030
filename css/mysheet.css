@@ -1,21 +1,9 @@
-body{
-<<<<<<< HEAD
-    background-image: url(../media/images/back.jpg);
-=======
-   background-image: url('../medea/images/back.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: white;
-}
-
 
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url('../medea/images/back.jpg');
->>>>>>> bd975af3f3c44c8fe4cb5d5f7460919077b06a05
+    background-image: url('../media/images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
