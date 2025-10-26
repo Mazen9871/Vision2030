@@ -1,5 +1,17 @@
 body{
-    background-image: url(medea/images/back.jpg);
+   background-image: url('../medea/images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../medea/images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -11,6 +23,7 @@ body{
     padding:2px;
     position: relative;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -53,11 +66,12 @@ nav img{
     color: white;
     text-align: center;
     padding: 10px ;
-    position: flex;
-    bottom: 0;
-    width: 100%;
+    width: cover;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.365);
+    margin-top: auto;
 }
+
+
 
 
 .first, .second,.three, .four, .five {
