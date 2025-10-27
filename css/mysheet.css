@@ -69,6 +69,10 @@ nav img{
     width: cover;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.365);
     margin-top: auto;
+    
+}
+.footer button {
+    display: flex;
 }
 
 
