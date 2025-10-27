@@ -1,3 +1,14 @@
+const lightModeBtn = document.getElementById('lightmode');
+const darkModeBtn = document.getElementById('darkmode');
+const body = document.body;
+lightModeBtn.addEventListener('click', () => {
+    body.classList.remove('dark-mode'); 
+});
+darkModeBtn.addEventListener('click', () => {
+    body.classList.add('dark-mode'); 
+});
+
+
 const projectsData = {
     
     diriyah: `<h2>بوابة الدرعية</h2>
@@ -29,10 +40,12 @@ const projectsData = {
         <p>روشن هو مشروع لبناء مجتمعات سكنية عصرية وحيوية.</p>
         <p>(...تفاصيل إضافية عن روشن...)</p>
     `
-};
+}
 
 function showProject(projectName) {
     const contentContainer = document.getElementById("project-content-container");
     const projectHTML = projectsData[projectName];
     contentContainer.innerHTML = projectHTML;
 }
+
+

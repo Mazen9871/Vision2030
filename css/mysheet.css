@@ -5,6 +5,22 @@ body{
     min-height: 100vh;
 background-color: #F4F4F4; 
 color: #333333; 
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #E0E0E0; 
+}
+body.dark-mode #project-content-container {
+    background-color: rgba(30, 30, 30, 0.95); 
+    color: #E0E0E0; 
+    border-color: #444;
+}
+
+body.dark-mode main h2, body.dark-mode main p {
+    color: #E0E0E0; 
 }
 
 .navbar {
@@ -55,7 +71,7 @@ nav img{
     background-color: #222831;
     color: white;
     text-align: center;
-    padding: 10px ;
+    padding: 20px ;
     width: cover;
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.365);
     margin-top: auto;
@@ -63,6 +79,19 @@ nav img{
 }
 .footer button {
     display: flex;
+}
+
+.hero-section {
+    position: relative; 
+    height: 400px; 
+    background-image: url('../media/images/backof2030.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 
@@ -121,14 +150,8 @@ nav img{
         height: auto;
     }
 }
-img{
-      width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
-   
-}
+
+
 main h2, main p {
     text-align: center;
     color: #000000; 
