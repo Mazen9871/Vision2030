@@ -71,12 +71,12 @@ nav img{
 
 
 
-.first, .second,.three, .four, .five {
+.projects {
     width:fit-content;
-    margin: 20px left;
+    margin: 20px auto; 
     display: flex;
     gap: 30px;
-    align-items: flex-start;
+    align-items: center;
     background-color: rgba(35, 55, 169, 0.368);
     backdrop-filter: blur(5px);
     padding: 20px;
@@ -85,11 +85,11 @@ nav img{
     transition: transform 0.2s ease;
 }
 
-.first:hover, .second:hover,.three:hover, .four:hover, .five:hover {
+.projects:hover {
     transform: translateY(-5px);
 }
 
-.first img, .second img,.three img, .four img ,.five img {
+.projects img {
     width: 350px;
     height: 350px;
     object-fit: cover;
@@ -97,9 +97,7 @@ nav img{
     flex-shrink: 0;
 }
 
-
-
-.first p, .second p,.three p, .four p, .five p {
+.projects p {
     margin: 0;
     line-height: 1.6; 
     font-size: 30px;
@@ -108,7 +106,7 @@ nav img{
     text-align: center;
 }
 
-.first a, .second a ,.three a, .four a, .five a {
+.projects a {
     text-decoration: none;
     color: inherit;
 }
