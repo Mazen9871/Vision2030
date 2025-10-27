@@ -156,7 +156,10 @@ main h2, main p {
     text-align: center;
     color: #000000; 
 }
-
+main p1 {
+    text-align: center;
+    color: #ffffff; 
+}
 
 .project-buttons {
     text-align: center; 
