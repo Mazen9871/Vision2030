@@ -97,61 +97,6 @@ nav img{
 
 
 
-.projects {
-    width:fit-content;
-    margin: 20px auto; 
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    background-color: rgba(35, 55, 169, 0.368);
-    backdrop-filter: blur(5px);
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.projects:hover {
-    transform: translateY(-5px);
-}
-
-.projects img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
-}
-
-.projects p {
-    margin: 0;
-    line-height: 1.6; 
-    font-size: 30px;
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-}
-
-.projects a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    .first, .second,.three, .four, .five {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .first img, .second img,.three img, .four img, .five img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
 main h2, main p {
     text-align: center;
     color: #000000; 
