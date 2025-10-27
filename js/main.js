@@ -47,5 +47,3 @@ function showProject(projectName) {
     const projectHTML = projectsData[projectName];
     contentContainer.innerHTML = projectHTML;
 }
-
-
