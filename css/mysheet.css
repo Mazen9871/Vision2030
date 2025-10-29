@@ -64,8 +64,7 @@ nav img{
 }
 
 
-.hero-section {
-    position: relative; 
+.banner {
     height: 400px; 
     background-image: url('../media/images/backof2030.jpg'); 
     background-size: cover;
