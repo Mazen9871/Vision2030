@@ -153,6 +153,33 @@ body.dark-mode #project-content-container {
 body.dark-mode main h2, body.dark-mode main p {
     color: #eeeeee; 
 }
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 335px; /* This moves the button down */
+}
 
+.cta-button {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #006C35;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #004a25;
+}
 
 
