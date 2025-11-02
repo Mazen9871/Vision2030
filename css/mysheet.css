@@ -16,7 +16,7 @@ color: #000000;
     margin-bottom: 20px;
     padding:2px;
     position: relative;
-    cursor: pointer;
+   
 }
 
 nav ul {
@@ -40,6 +40,8 @@ nav a {
     font-size: 20px;
     border-radius: 6px;
     transition: background-color 160ms ease, transform 120ms ease, color 160ms ease;
+         cursor: pointer;
+
 }
 nav a:hover{
     background: #004a25;
@@ -137,6 +139,8 @@ main h2, main p {
     padding: 5px 10px;
     border-radius: 50px;
     font-size: 15px;
+         cursor: pointer;
+
 }
 
 
