@@ -1,12 +1,38 @@
 const lightModeBtn = document.getElementById('lightmode');
 const darkModeBtn = document.getElementById('darkmode');
 const body = document.body;
-lightModeBtn.addEventListener('click', () => {
-    body.classList.remove('dark-mode'); 
-});
-darkModeBtn.addEventListener('click', () => {
-    body.classList.add('dark-mode'); 
-});
+
+// Apply a theme and persist it to localStorage. Also update the radio inputs if present.
+function applyTheme(theme) {
+    if (theme === 'dark') {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
+    try { localStorage.setItem('theme', theme); } catch (e) { /* ignore storage errors */ }
+
+    if (lightModeBtn) lightModeBtn.checked = (theme === 'light');
+    if (darkModeBtn) darkModeBtn.checked = (theme === 'dark');
+}
+
+// Load saved theme on startup (defaults to light)
+(function() {
+    const saved = (function(){ try { return localStorage.getItem('theme'); } catch(e){ return null; } })();
+    if (saved === 'dark' || saved === 'light') {
+        applyTheme(saved);
+    } else {
+        // default: use current body class or light
+        applyTheme(body.classList.contains('dark-mode') ? 'dark' : 'light');
+    }
+})();
+
+// Attach event listeners safely (some pages may not include the inputs)
+if (lightModeBtn) {
+    lightModeBtn.addEventListener('click', () => applyTheme('light'));
+}
+if (darkModeBtn) {
+    darkModeBtn.addEventListener('click', () => applyTheme('dark'));
+}
 
 
 const projectsData = {
