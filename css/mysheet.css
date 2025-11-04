@@ -13,7 +13,7 @@ color: #000000;
 .navbar {
     background-color: #006C35;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.365);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding:2px;
     position: relative;
    
@@ -136,9 +136,9 @@ main h2, main p {
     top: 10px;
     right: 10px;
     background-color: rgba(0, 0, 0, 0.203);
-    padding: 5px 10px;
-    border-radius: 50px;
-    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 60px;
+    font-size: 25px;
          cursor: pointer;
 
 }
