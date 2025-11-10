@@ -185,5 +185,82 @@ body.dark-mode main h2, body.dark-mode main p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
     background-color: #004a25;
 }
+.about{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: rgba(1, 1, 255, 0.632);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}   
+.about:hover{
+    transform: translateY(-5px);
+}
+.about ul{
+    list-style:disc;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about h2{
+    margin-top: 20px;
+    font-size: 24px;
+text-align: center;
+    list-style: none;
+}
+.about a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+   display: space-evenly;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+
+}
+.contact {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(108, 117, 211, 0.084);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #006C35;
+}
+
 
 
